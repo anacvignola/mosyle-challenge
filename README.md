@@ -6,6 +6,8 @@ This project does not use front-end frameworks, it was developed using only HTML
 
 The challenge is to develop a single dashboard page. It must contain at least three parts, a header, a menu, and a form for creating events.
 
+<img src="https://github.com/anacvignola/mosyle-challenge/blob/master/assets/images/screenshot.PNG" />
+
 ## How to use
 
 ```bash

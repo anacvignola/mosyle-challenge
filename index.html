@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Dashboard Events Mosyle</title>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <a href="https://mosyle.com/" target="_blank"></a>
+    <img src="./assets/images/logo.png" alt="Mosyle" />
+    </a>
+    <a href="#modal-one">
+      <button class="btn-new">
+        <i class="ri-add-line"></i>
+        <p class="menu-p">New event</p>
+      </button>
+    </a>
+    <ul class="menu">
+      <li><a href="/"><i class="ri-dashboard-line"></i>
+          <p class="menu-p">Dashboard</p>
+        </a></li>
+      <li><a href="" class="active">
+          <i class="ri-calendar-event-line"></i>
+          <p class="menu-p">Events</p>
+        </a></li>
+      <li><a href="">
+          <i class="ri-chat-3-line"></i>
+          <p class="menu-p">Chat</p>
+        </a></li>
+      <li><a href="">
+          <i class="ri-settings-5-line"></i>
+          <p class="menu-p">Settings</p>
+        </a></li>
+    </ul>
+  </aside>
+
+  <!-- Modal -->
+  <div class="modal" id="modal-one" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Novo Evento:</h2>
+        <a href="#" class="btn-close" aria-hidden="true">×</a>
+      </div>
+      <div class="modal-body">
+        <label>Nome:</label>
+        <input type="text" name="name" />
+        <label>Data:</label>
+        <input type="date" name="date" />
+        <label>Horário:</label>
+        <p>Dia inteiro ?</p>
+
+        <div class="container">
+          <span class="yes">Sim</span>
+          <input type="checkbox" class="check">
+          <span class="no">Não</span>
+          <div class="content contentYes">
+          </div>
+          <div class="content contentNo">
+            <p>De:</p>
+            <input type="time" name="initial-hour">
+            <p>Até:</p>
+            <input type="time" name="finish-hour">
+          </div>
+        </div>
+        <label>Descrição:</label>
+        <input type="text" name="description" />
+        <label>Localização:</label>
+        <input type="text" name="localization" />
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Cadastrar</a>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+
+  <main>
+    <div class="header">
+      <h3 class="page-title">Events</h3>
+      <div class="wrapper-header">
+        <span class="date">23 de julho de 2020</span>
+        <button class="btn-search"><i class="ri-search-2-line"></i></button>
+        <div class="dropdown">
+          <img src="./assets/images/tony-avatar.png" class="avatar-img" />
+          <span>Tony</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+      </div>
+    </div>
+    <div class="filters-wrapper">
+      <div class="date-picker">
+        <button class="btn-date"><i class="ri-arrow-left-s-line"></i></button>
+        <input type="date" name="dateofbirth" id="dateofbirth">
+        <button class="btn-date"><i class="ri-arrow-right-s-line"></i></button>
+      </div>
+      <div class="togle-button">
+        <input id="input-switch-employ" type="radio" name="input-switch-os" onclick="ChangeStateInfos()"
+          checked="checked" />
+        <input id="input-switch-employer" type="radio" name="input-switch-os" onclick="ChangeStateInfos()" />
+        <div id="top-switch-labels">
+          <label id="top-switch-label-employ" for="input-switch-employ">Active</label>
+          <label id="top-switch-label-employer" for="input-switch-employer">Inactive</label>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="wrapper-events">
+      <div class="card-event">
+        <div class="wrapper-card-top">
+          <div class="card-title">
+            <span class="day">16</span>
+            <h4>Tomorowland 2021</h4>
+          </div>
+          <span class="card-hour">Dia inteiro</span>
+        </div>
+        <p class="card-description">Tomorrowland é um festival de música realizado anualmente. Sua edição original é
+          realizada em Boom na Bélgica, cidade com menos de 20 mil habitantes, no distrito de Antuérpia. A edição
+          brasileira foi anunciada em 20 de julho de 2014, e foi realizada na cidade de Itu, São Paulo, até 2016.</p>
+        <span class="card-location"><i class="ri-map-pin-2-line"></i>Bélgica</span>
+      </div>
+      <div class="card-event">
+        <div class="wrapper-card-top">
+          <div class="card-title">
+            <span class="day">05</span>
+            <h4>FrontEndBR 2021</h4>
+          </div>
+          <span class="card-hour">8 hrs ás 21 hrs</span>
+        </div>
+        <p class="card-description">FrontEndBR é um festival de conhecimento realizado anualmente. Sua edição original é
+          realizada em Boom na Bélgica, cidade com menos de 20 mil habitantes, no distrito de Antuérpia. A edição
+          brasileira foi anunciada em 20 de julho de 2014, e foi realizada na cidade de Itu, São Paulo, até 2016.</p>
+        <span class="card-location"><i class="ri-map-pin-2-line"></i>São Paulo</span>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
